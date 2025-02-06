@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!--Estos son los TAG-->
+    <meta name="keywords" content="harina,leche,huevo">
+    <meta name="description" content="una descripcion">
+    <meta name="auto" content="yo">
+    <meta name="copyright" content="Yo Inc.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Titulo</title>
+</head>
+<body style="background-color: #171717; color: #cecece;">
+    <!--Titulos de mas grande a mas pequeño-->
+    <h1>Hola Mundo</h1> <!--Este se pone solo una vez-->
+    <h2>Hola Mundo</h2> <!--Este se suele poner mas veces-->
+    <h3>Hola Mundo</h3> <!--Asi sucesibamente-->
+    <h4>Hola Mundo</h4>
+    <h5>Hola Mundo</h5>
+    <h6>Hola Mundo</h6>
+
+    <!-- Parrafo -->
+    <!-- Solo para parrafo -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt et eaque consequatur in sapiente corrupti
+        temporibus, iste repudiandae eligendi! Voluptatem eveniet voluptatum natus obcaecati explicabo nobis cumque dolores
+        ab repellendus.
+    </p>
+
+    <b>Negrita</b>
+    <i>Italica</i>
+    <strike>Texto Tachada</strike>
+    <small>Texto Pequeña</small>
+
+    <!--Hyperviculo-->
+    <!--Tiene una referencia (href) para decirle a donde iremos-->
+    <!--Tenemos 2 ruta una local (la que esta en nuestro servidor) y otra externa-->
+    <!--Para ir a una pagina externa tenemos que poner HTTPS | HTTP-->
+    <a href="pagina2.html">Pagina 2 Ejemplo</a>
+    
+    <!--Carpeta-->
+    <a href="cosas/pagina3.html">Pagina 3 Carpeta</a>
+
+    <!--Atributos-->
+    <!--Para abrir en una nueva pestaña-->
+    <a href="pagina2.html" target="_blank">Se abriara en una nueva pestalla</a>
+
+    <!--br-->
+    <!--Salto de linea-->
+    <p>hola <br> mundo</p>
+
+    <!--Repaso de lo aprendido-->
+    <a href="cosas/repasobasico.html">Repaso Basico</a>
+
+
+
+    <!--HTML "Intermedio"-->
+    
+    <!--Listas-->
+    <!--Lista Desordenada-->
+    <ul>
+        <li>Pan</li>
+        <li>Queso</li>
+        <li>Hamburguesa</li>
+        <li>Pollo</li>
+        <li>Arroz</li>>
+    </ul>
+
+    <!--Lista Ordenada-->
+    <ol>
+        <li>Pan</li>
+        <li>Queso</li>
+        <li>Hamburguesa</li>
+        <li>Pollo</li>
+        <li>Arroz</li>>
+    </ol>
+
+    <!--Multimedia-->
+    <!--Imagen-->
+    <!--Recomendable solo usar width o height, para que se ajuste bn a no ser que sea 
+        simetrica la img-->
+    <!--Es mas recomendable hacer esto solo en CSS y no en el HTML ya que no se podra modificar en CSS-->
+    <h2>Imagen</h2>
+    <img src="img/01_WotW_E3_2018.png" alt="foto Ori" width="200px">
+
+    <!--Video-->
+    <!--Siempre con el formado y control-->
+    <h2>Video</h2>
+    <video src="http://v2v.cc/~j/theora_testsuite/320x240.ogg" controls></video>
+
+    <!--Audio-->
+    <!--Siempre con el formado y control-->
+    <h2>Audio</h2>
+    <audio src="http://v2v.cc/~j/theora_testsuite/320x240.ogg" controls></audio>
+
+    <!--DIV-->
+    <!--Contenedores-->
+    <div>
+        <h4>Nombre del producto</h4>
+        <p>
+            Precio: <b>50€</b>
+        </p>
+    </div>
+
+    <!--Formularios-->
+    <!--Name se usa para decirle al servidor en que apartado tiene que coger el dato-->
+    <h2>Formularios</h2>
+    <form action="">
+        <!--Mas Usado-->
+        <h3>Mas usado</h3>
+        <input type="text" name="usuario" required> <!--Required te obliga a rellenar el campo-->
+        <input type="password" name="password">
+        <input type="number" name="">
+        <input type="email" name="">
+        <input type="button" value="boton" name="">
+        <input type="submit" name="">
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <!--"no tan usado"-->
+        <h3>"no tan usado"</h3>
+        <input type="color" name="">
+        <input type="range" name="" min="1" max="5"> <!--Se puede poner un rango-->
+        <input type="date" name="">
+        <input type="time" name="">
+        <input type="checkbox" name="">
+        <input type="button" name="">
+        <input type="radio" name="">
+        <input type="text" name="">
+    </form>
+
+    <!--Estructura semantica-->
+    <h2>Estructura Semantica</h2>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#"></a>Home</li>
+                <li><a href="#"></a>Login</li>
+                <li><a href="#"></a>Contactos</li>
+                <li><a href="#"></a>Registro</li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <section>
+            <h1>Repasando HTML5</h1>
+            <h2>Volviendo a ver todo los comcepto de HTML5</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, totam.</p>
+        </section>
+    </article>
+    <!--El Aside se suele usar para contenido irelevante como una publicidad o para recomendar otros elementos-->
+    <aside>
+        <h2>Contenido Extra</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, placeat.</p>
+    </aside>
+    <footer>
+        <h4>Copyright - Todos los derechos son mios XD</h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <a href="#">Twitter</a>
+        <a href="#">Discord</a>
+        <a href="#">Youtube</a>
+    </footer>
+
+    <!--Tablas-->
+    <h2>Tablas</h2>
+    <table>
+        <!--Fila-->
+        <tr>
+            <!--Columna-->
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+        </tr>    
+        <tr>
+            <!--Columna-->
+            <td>adios</td>
+            <td>adios</td>
+            <td>adios</td>
+            <td>adios</td>
+        </tr>
+    </table>
+
+    <!--Etiqueta Center, Mejor con CSS-->
+    <h2>Etiqueta Center</h2>
+    <center>
+        <p>Centrara todo el contenido que se ponga aqui</p>
+    </center>
+
+</body>
+</html>
